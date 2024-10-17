@@ -16,16 +16,16 @@ let config = {
         pixelArt: true
     },
     //pixelArt: true,
-    width: 320,
-    height: 320,
-    zoom: 2,
+    width: 64*40,
+    height: 64*30,
+    zoom: 0.35,
     physics: {
         default: "arcade",
         arcade: {
             //debug: true,
         }
     },
-    scene: [ ArrayMap, RandomMap, TiledSimple, TiledPlatform, ParallaxLayers, SpawnMap, TilePainter, SimpleAnimation, TiledAnimation, TileBias ]
+    scene: [ PerlinNoiseMap ]
 }
 
 const game = new Phaser.Game(config)
